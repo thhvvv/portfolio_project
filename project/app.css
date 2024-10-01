@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Colors */
+:root {
+  --primary-green: #4CAF50;
+  --secondary-green: #81C784;
+  --white: #fff;
+  --black: #000;
+  --grey: #666;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-green);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links li a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--secondary-green);
+}
+
+/* Intro */
+.hero-section {
+  background-image: url('farm.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  color: var(--white);
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  padding: 1rem 2rem;
+  background-color: var(--secondary-green);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary-green);
+}
+
+/* Products Section */
+.products-section {
+  padding: 3rem 0;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Farmer Profile */
+.farmer-profile {
+  background-color: var(--grey);
+  color: var(--white);
+  padding: 3rem;
+}
+
+.farmer-profile form {
+  display: flex;
+  flex-direction: column;
+}
+
+.farmer-profile label {
+  margin-bottom: 0.5rem;
+}
+
+.farmer-profile input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.farmer-profile button {
+  padding: 0.75rem;
+  background-color: var(--secondary-green);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.farmer-profile button:hover {
+  background-color: var(--primary-green);
+}
