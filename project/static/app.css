@@ -1,14 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #f0fff0, #e6ffe6);
     background-color: #f5f5f5;
 }
 
 header {
-    background-color: #4CAF50;
-    padding: 10px;
+    background-color: #28a745;
+    padding: 20px;
     text-align: center;
+    color: white;
 }
 
 header .logo {
@@ -32,8 +34,33 @@ header nav ul li a {
     text-decoration: none;
 }
 
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
 section {
+    padding: 50px 0;
+    margin-bottom: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px;
+}
+
+.section {
+    flex: 1 1 45%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #signin-section, .login-form, #farmer-dashboard, #company-dashboard, #agrishop-dashboard {
@@ -43,27 +70,44 @@ section {
     margin: 20px;
 }
 
+.product img {
+    transition: transform 0.3s ease;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
 button {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
+    border-radius: 5px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #218838;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+footer a {
+    color: #28a745;
+    text-decoration: none;
 }
 
 .social-media a {
