@@ -1,3 +1,21 @@
+// Show spinner on page load
+window.addEventListener('load', function() {
+    var spinner = document.getElementById('spinner');
+    spinner.classList.remove('show');
+});
+
+// Function to show the spinner manually if needed
+function showSpinner() {
+    var spinner = document.getElementById('spinner');
+    spinner.classList.add('show');
+}
+
+// Function to hide the spinner manually if needed
+function hideSpinner() {
+    var spinner = document.getElementById('spinner');
+    spinner.classList.remove('show');
+}
+
 function showLogin(role) {
     document.getElementById('farmer-login').style.display = 'none';
     document.getElementById('company-login').style.display = 'none';

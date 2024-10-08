@@ -8,6 +8,10 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
 </head>
 <body>
+	<div id="spinner" class="show">
+		<img src="{{ url_for('static', filename='spinner.gif') }}" alt="Loading...">
+	</div>
+
 	<!-- Header Section -->
 	<header>
 		<div class="logo">

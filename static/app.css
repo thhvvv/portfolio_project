@@ -6,6 +6,30 @@ body {
     background-color: #f5f5f5;
 }
 
+/*** Spinner Start ***/
+#spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner img {
+    width: 80px;
+    height: 80px;
+}
+
+#spinner.show {
+    transition: opacity .8s ease-out, visibility 0s linear .0s;
+    visibility: visible;
+    opacity: 1;
+}
+/*** Spinner End ***/
+
 header {
     background-color: #28a745;
     padding: 20px;
