@@ -64,6 +64,35 @@ nav a {
     text-decoration: none;
 }
 
+.about-us {
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 32px;
+    color: #2d6a4f;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us ul li {
+    font-size: 18px;
+    color: #2d6a4f;
+    margin: 10px 0;
+}
+
+
 section {
     padding: 50px 0;
     margin-bottom: 20px;
