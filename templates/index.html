@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgriTech</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
 </head>
 <body>
 	<!-- Header Section -->
 	<header>
 		<div class="logo">
-			<img src="logo.jpg" alt="AgriTech Logo" width="50" height="50">
+			<img src="{{ url_for('static', filename='logo.jpg') }}" alt="Logo" width="50" height="50">
 		</div>
 		<nav>
 			<ul>
@@ -151,6 +151,6 @@
 		<p>AgriTech @ 2024. All rights reserved.</p>
 	</footer>
 
-	<script src="app.js"></script>
+	<script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
